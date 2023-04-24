@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Media Mogul: The Game</title>
+</head>
+<body>
+    <h1>Media Mogul</h1>
+    <div id="start-screen">
+        <input type="text" id="player-name" placeholder="Enter your name">
+        <button type='submit' id="start">Game on!</button>
+    </div>
+    <div class="slide" id="first-slide">
+        Congradulations, <span class="yellow" id="player-one"></span>, you are a powerful magazine publisher!<br><br>Unfortunately, business isn't what it used to be.
+    </div>
+    <div class="slide" id="second-slide">To survive, you vow to reinvent your magazine as a profitable <span class="yellow">digital media startup</span>!</div>
+    <div class="slide" id="third-slide">But in so doing, you must vanquish your arch nemesis, <span class="yellow">Theter Piel and his Mendacious Band of Intellectual Property Thieves</span>, who will attempt to sabotage you at every step.</div>
+    <div class="slide" id="forth-slide">Fortunately, business consultancy firm <span class="yellow">KcMinsey</span> has provided you with an array of brilliant options sure to help you bolster shareholder value and forever hold the title of<br>Media Mogul!</div>
+    <div class="slide" id="fifth-slide">You get <span class="yellow">five</span> chances to see your startup succeed.<br><br>Beware of unexpected liabilities.</div>
+    <button class="next" id="next1">Next</button>
+    <button class="next" id="next2">Next</button>
+    <button class="next" id="next3">Next</button>
+    <button class="next" id="next4">Next</button>
+    <button class="next" id="play">Play</button>
+    <div class="gameboard-wrapper" id="gb">
+        <ul class="choices">
+            <li class="choice" id="a" data-index="0" data-revenue="1200" data-liabilities="10500">
+            <img src="/images/pinkertons.png" alt="pinkertons">
+            <p>Hire Pinkertons to nip any union organizing in the bud</p>
+            </li>
+            <li class="choice" id="b" data-index="1" data-revenue="18600" data-liabilities="150000">
+                <img src="/images/wall.png" alt="wall">
+                <p>Put up a paywall</p>
+            </li>
+            <li class="choice" id="c" data-index="2" data-revenue="23000" data-liabilities="87500">
+                <img src="/images/video.png" alt="video camera">
+                <p>Pivot to video</p>
+            </li>
+            <li class="choice" id="d" data-index="3" data-revenue="54000" data-liabilities="1200000">
+                <img src="/images/glem.png" alt="glem">
+                <p>Hire crypto-fascist provocateur Glem Greenwaddle to run your Op-Ed section</p>
+            </li>
+            <li class="choice" id="e" data-index="4" data-revenue="90000" data-liabilities="75000">
+                <img src="/images/office.png" alt="office building">
+                <p>Cut down on office space and allow flexible work-from-home twice a week</p>
+            </li>
+            <li class="choice" id="f" data-index="5" data-revenue="1500" data-liabilities="163000">
+                <img src="/images/seo.png" alt="seo consultants">
+                <p>Fire you're copyeditors. Replace them with SEO consultants</p>
+            </li>
+            <li class="choice" id="g" data-index="6" data-revenue="34000" data-liabilities="77000">
+                <img src="/images/taboola.png" alt="related links">
+                <p>Let Taboola slap a chumbox at the bottom of all your stories</p>
+            </li>
+            <li class="choice" id="h" data-index="7" data-revenue="55000" data-liabilities="83000">
+                <img src="/images/podcasts.png" alt="podcasts">
+                <p>Invest in longform narrative podcasts</p>
+            </li>
+            <li class="choice" id="i" data-index="8" data-revenue="" data-liabilities="">
+                <img src="/images/fyre.png" alt="podcasts">
+                <p>Launch a live event series</p>
+            </li>
+            <li class="choice" id="j" data-index="9" data-revenue="110000000" data-liabilities="10500000">
+                <img src="/images/court.png" alt="pinkertons">
+                <p>Go on a lobbying blitz to establish a Section 230 exemption for the Third Circut Court of Appeals' doctrine of display rights nationwide</p>
+            </li>
+        </ul>
+        <div class="counter-wrapper">
+            <div class="turns">
+                <h3>Decisions Remaining</h3>
+                <div class="remaining">5</div>
+            </div>
+            <div class="revenue-wrapper">
+                <h2>Profit</h2>
+                <div class="counter-display">
+                    <div class="counter-display-text" id="rev-counter">0</div>
+                </div>
+            </div>
+            <div class="liabilities-wrapper">
+                <h2>Liabilities</h2>
+                <div class="counter-display">
+                    <div class="counter-display-text" id="lia-counter">0</div>
+                </div>
+            </div>
+            <button id="replay">Play Again</button>
+            <button id="restart">Restart</button>
+        </div>
+    </div>  
+    <div id="music">
+        <audio loop id="myAudio">
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Click the buttons to play or pause the audio.</p>
+        <button id="audio-play" onclick="playAudio()" type="button">PLAY</button>
+        <button id="audio-pause" onclick="pauseAudio()" type="button">PAUSE</button> 
+        “Popcorn” by Gershon Kingsley from <em>Music to Moog By</em> (1969)
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

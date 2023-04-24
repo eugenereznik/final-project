@@ -1,0 +1,236 @@
+body{
+    font-family: 'Press Start 2P', cursive;
+    color: white; 
+    background-color: rgb(0, 0, 200);
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+#start-screen{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    width: 1000px
+}
+input{margin-right: 1rem;
+    box-shadow: inset -3px -3px #777777;
+}
+
+button{
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none; 
+    color: black;
+    height: 4rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: black 4px solid;
+    box-shadow: inset -3px -3px #777777;
+    border-radius: 7px;
+}
+
+#player-name{
+    background-color: lightgray;
+    height: 4rem;
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+.slide{
+    margin: auto;
+    margin-top: 7rem;
+    max-width: 65%;
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+.yellow{
+    color: yellow
+}
+#first-slide{
+    display: none;
+}
+#second-slide{
+    display: none;
+}
+#third-slide{
+    display: none;
+}
+#forth-slide{
+    display: none;
+}
+#fifth-slide{
+    display: none;
+}
+
+#start:active {
+    transform: scale(.98)
+}
+.next{
+    margin: auto;
+    margin-top:5rem;
+}
+.next:active {
+    transform: scale(.98)
+}
+
+#next1{display: none}
+#next2{display: none}
+#next3{display: none}
+#next4{display: none}
+
+#play{
+    display: none;
+}
+
+#replay{
+    display: none;
+}
+#restart{
+    display: none;
+}
+
+
+.gameboard-wrapper{
+    display: none;
+    /* display: flex; */
+    width: 75%;
+    margin: auto;  
+    padding-bottom: 4rem;  
+}
+
+ul{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    justify-content: center;
+}
+
+li{
+    display: flex;
+    text-align: center;
+    vertical-align: center;
+    width: 220px;
+    height: 220px;
+    background-color: lightgray;
+    margin:7px;
+    border: black 4px solid;
+    box-shadow: inset -3px -3px #777777;
+    border-radius: 7px;
+}
+img{
+    vertical-align: middle;
+    width: 90%;
+    margin: auto;
+}
+p{  
+    display: none;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    color: black;
+    position: relative;
+    line-height: 1.5;
+    font-size: .8rem;
+    width: 90%;
+    
+}
+li:hover p{
+    display: block !important;
+}
+li:hover img{
+    display: none !important;
+}
+li:active {
+    transform: scale(.98)
+}
+
+.counter-wrapper{
+    width: 20%;
+    text-align: center;
+    padding-top: 10px;
+}
+.counter-display{
+    background-color: lightgray;
+    box-shadow: inset -3px -3px #777777;
+    text-align: right;
+    margin: auto;
+    width: 95%;
+    padding: .5rem;
+    height:2rem;
+    margin-bottom: 1rem;
+}
+h2{ 
+    font-size: 1.3rem;
+    padding: 10px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h3{
+    margin-top: 0;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.remaining{
+    font-size: 3rem;
+    padding-bottom: 1.4rem;
+}
+.counter-display-text{
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: black;
+}
+#replay, #restart{
+    font-size: 1rem;
+    height: 2rem;
+    margin: .7rem;
+    margin-left: 4px;
+}
+#replay{
+    margin-top: 1.4rem;
+}
+
+#replay:active {
+    transform: scale(.98)
+}
+#restart:active {
+    transform: scale(.98)
+}
+audio{
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+}
+#music{
+    visibility: hidden;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    background-color:  rgb(0, 0, 200);
+    margin-bottom: -1rem;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+}
+#audio-play:active {
+    transform: scale(.98)
+}
+#audio-pause:active {
+    transform: scale(.98)
+}
